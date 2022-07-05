@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+    background: #232429;
+    padding: 13px 0;
+}
+
+nav .nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    padding: 5px 0;
+}
+
+nav .nav-bar .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .nav-bar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #edf0f1;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+
+nav .nav-bar .menu a:hover {
+    color: #eceef3;
+
+}
+
+nav .nav-bar .menu li {
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav .nav-bar .menu li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav .nav-bar .menu li:hover:after {
+    width: 100%;
+}
+
+nav .media-icons a {
+    color: #4070f4;
+    font-size: 18px;
+    margin: 0 6px;
+}
+
+.home {
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(static/images/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100vh ;
+    position: relative;
+    width: 100%;
+}
+
+.home-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.home-content h1 {
+    color: #e9f4f4;
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+    line-height: 2;
+}
+
+.home-content button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+h2 {
+    color: #052020;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 2;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color:  #11999E;
+}
+
+hr {
+    border: dotted #11999E 6px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+
+.my-title {
+    color: #dfeded;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+section {
+    padding-top: 40px;
+}
+
+section .content{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.about {
+    padding-bottom: 90px;
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about .about-details .image{
+    width: 45%;
+  }
+
+.about .image img{
+height: 400px;
+width: 400px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.about-details .about-description{
+    width: 55%;
+}
+
+.about-details .about-description p{
+    text-align: justify;
+    color: #0E2431;
+}
+
+.skills {
+    background: #eff2fb;
+    padding-bottom: 50px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.python-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.html-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.css-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.sql-image {
+    width: 30%;
+    float: right;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+
+.bottom-container {
+    background-color: #66BFBF;
+    height: 100px;
+    padding: 50px 0px 20px;
+    margin-top: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.footer-link:hover{
+    color: #EAF6F6;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.9rem;
+    padding-right: 40px;
+}
+
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #4070f4;
+    padding: 7px 12px;;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+  }
+
+  /* Responsive website */
+@media (max-width: 1190px){
+    .content{
+        width: 85%;
+    }
+}
+@media (max-width: 750px) {
+    nav .navbar{
+        width: 90%;
+    }
+    nav .navbar .menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #0E2431;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+    .navbar.active .menu{
+        left: 0;
+    }
+    nav .navbar .menu a{
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 10px 0;
+    }
+    nav .media-icons{
+        display: none;
+        }
+}
